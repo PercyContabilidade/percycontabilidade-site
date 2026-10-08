@@ -43,7 +43,7 @@ section{padding:54px 0}
 .centro .grade{text-align:center}
 .card.destaque{border:2px solid var(--ouro)}
 .card .preco{font-size:42px;margin:10px 0 0;color:var(--vinho)}
-.card .nota{font-size:15px;margin-top:6px}
+.diag{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:14px 0 6px;text-align:left}.diag>div{background:var(--papel);border:1px solid var(--linha);border-radius:10px;padding:12px 14px}.diag h4{margin:0 0 4px;font-size:15px;color:var(--vinho)}.diag p{font-size:14px}@media (max-width:640px){.diag{grid-template-columns:1fr}}.card .proximo{margin-top:18px;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--ouro)}.card .preco span{font-size:18px}.card .nota{font-size:15px;margin-top:6px}
 h2{font-size:clamp(24px,4.5vw,32px);margin:0 0 8px;color:var(--vinho)}
 .sub{color:var(--suave);margin:0 0 28px}
 .grade{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
@@ -102,7 +102,16 @@ footer a{color:var(--ouro-claro)}
     <div class="passos">
       <div class="card"><div class="num">1</div><h3>Você chama</h3><p>Clique no botão e o WhatsApp abre com a mensagem pronta. É só enviar e responder 3 perguntas rápidas sobre o seu MEI, ali mesmo na conversa.</p></div>
       <div class="card"><div class="num">2</div><h3>Nós analisamos</h3><p>Conferimos a situação do seu CNPJ e montamos o seu relatório.</p></div>
-      <div class="card destaque largo"><div class="num">3</div><h3>Você decide</h3><p>Recebe o diagnóstico com os próximos passos.</p><p class="preco">R$ 50</p><p class="nota">Pagamento por Pix, combinado no próprio WhatsApp. Você envia o comprovante e o seu Raio-X é liberado. Se você contratar um serviço da Percy depois, os <strong>R$ 50 são descontados do valor desse serviço</strong>, nas condições combinadas no atendimento.</p></div>
+      <div class="card destaque largo"><div class="num">3</div><h3>Você recebe o diagnóstico completo</h3>
+        <div class="diag">
+          <div><h4>1. Situação cadastral</h4><p>Status do CNPJ (ativo, inapto ou suspenso), CNAE principal e secundários e habilitação para emitir notas fiscais.</p></div>
+          <div><h4>2. Regularidade fiscal</h4><p>DAS pagos e pendentes, DASN-SIMEI entregues, dívida ativa e certidões negativas.</p></div>
+          <div><h4>3. Limite de faturamento</h4><p>Faturamento acumulado no ano e análise das notas de compra, para você não estourar o limite do MEI.</p></div>
+          <div><h4>4. Obrigações trabalhistas</h4><p>Se você tem funcionário: eSocial, FGTS e INSS em dia.</p></div>
+        </div>
+        <p class="proximo">Próximo passo</p>
+        <p class="preco">R$ 50 <span>no Pix</span></p>
+        <p class="nota">Você paga por Pix no próprio WhatsApp e envia o comprovante. Se precisar contratar um serviço da Percy, <strong>os R$ 50 valem como entrada e são abatidos do valor total</strong>. Depois do diagnóstico, você confere o valor de cada serviço e só então decide o próximo passo.</p></div>
     </div>
     <p style="margin:26px 0 0"><a class="btn" href="https://wa.me/5521979667707?text=Ol%C3%A1!%20Quero%20o%20Raio-X%20MEI" target="_blank" rel="noopener">Pedir o Raio-X no WhatsApp</a></p>
   </div>
