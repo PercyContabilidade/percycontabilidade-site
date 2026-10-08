@@ -14,7 +14,7 @@
 :root{--vinho:#5b1530;--vinho2:#7a1d41;--ouro:#c9a24b;--ouro-claro:#f3e7c6;--papel:#fbf8f2;--texto:#2a1a20;--suave:#6b5a60;--linha:#e6dcc8}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;font-family:Georgia,"Times New Roman",serif;color:var(--texto);background:var(--papel);line-height:1.6;font-size:18px}
+body{margin:0;font-family:Georgia,"Times New Roman",serif;color:var(--texto);background:var(--papel);line-height:1.65;font-size:20px}
 h1,h2,h3,.marca,.btn,.tag{font-family:"Segoe UI",system-ui,-apple-system,Arial,sans-serif}
 a{color:inherit}
 .wrap{max-width:980px;margin:0 auto;padding:0 20px}
@@ -23,7 +23,7 @@ header{background:#3f0d0c;color:#fff}
 .topo{display:flex;align-items:center;justify-content:space-between;padding:14px 0;gap:12px;flex-wrap:wrap}
 .marca{font-weight:700;font-size:20px;letter-spacing:.3px}
 .marca span{display:block;font-weight:400;font-size:12px;color:var(--ouro-claro);letter-spacing:1.5px;text-transform:uppercase}
-.btn{display:inline-block;background:var(--ouro);color:#2a1a20;font-weight:700;text-decoration:none;padding:14px 24px;border-radius:10px;font-size:17px;border:0;cursor:pointer}
+.btn{display:inline-block;background:var(--ouro);color:#2a1a20;font-weight:700;text-decoration:none;padding:15px 26px;border-radius:10px;font-size:19px;border:0;cursor:pointer}
 .btn:hover{background:#d8b45c}
 .btn.sec{background:transparent;border:2px solid var(--ouro);color:#fff}
 .hero{padding:44px 0 56px;text-align:center}
@@ -34,7 +34,7 @@ header{background:#3f0d0c;color:#fff}
 @media (max-width:640px){.passos{grid-template-columns:1fr}}
 .tag{display:inline-block;background:rgba(201,162,75,.18);color:var(--ouro-claro);padding:6px 12px;border-radius:99px;font-size:13px;letter-spacing:.5px}
 h1{font-size:clamp(30px,6vw,46px);line-height:1.15;margin:16px 0 14px}
-.hero p{font-size:20px;max-width:640px;color:#f1e8ea;margin:0 auto 26px}
+.hero p{font-size:22px;max-width:640px;color:#f1e8ea;margin:0 auto 26px}
 .acoes{display:flex;gap:12px;flex-wrap:wrap}
 section{padding:54px 0}
 .centro{text-align:center}
@@ -43,24 +43,24 @@ section{padding:54px 0}
 .centro .grade{text-align:center}
 .card.destaque{border:2px solid var(--ouro)}
 .card .preco{font-size:42px;margin:10px 0 0;color:var(--vinho)}
-.diag{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:14px 0 6px;text-align:left}.diag>div{background:var(--papel);border:1px solid var(--linha);border-radius:10px;padding:12px 14px}.diag h4{margin:0 0 4px;font-size:15px;color:var(--vinho)}.diag p{font-size:14px}@media (max-width:640px){.diag{grid-template-columns:1fr}}.card .proximo{margin-top:18px;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--ouro)}.card .preco span{font-size:18px}.serv{list-style:none;margin:10px 0 0;padding:0;text-align:left}.serv li{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;font-size:13px;padding:6px 0;border-top:1px dashed var(--linha);color:var(--suave)}.serv b{color:var(--vinho);white-space:nowrap}.card .nota.peq{font-size:13px}.card .nota{font-size:15px;margin-top:6px}
+.diag{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:14px 0 6px;text-align:left}.diag>div{background:var(--papel);border:1px solid var(--linha);border-radius:10px;padding:12px 14px}.diag h4{margin:0 0 4px;font-size:18px;color:var(--vinho)}.diag p{font-size:16px}@media (max-width:640px){.diag{grid-template-columns:1fr}}.card .proximo{margin-top:18px;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--ouro)}.card .preco span{font-size:18px}.serv{list-style:none;margin:10px 0 0;padding:0;text-align:left}.serv li{display:flex;flex-direction:column;gap:2px;font-size:16px;padding:6px 0;border-top:1px dashed var(--linha);color:var(--suave)}.serv b{color:var(--vinho);white-space:nowrap}.card .nota.peq{font-size:15px}.card .nota{font-size:17px;margin-top:6px}
 h2{font-size:clamp(24px,4.5vw,32px);margin:0 0 8px;color:var(--vinho)}
 .sub{color:var(--suave);margin:0 0 28px}
 .grade{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
 .card{background:#fff;border:1px solid var(--linha);border-radius:14px;padding:20px}
-.card h3{margin:0 0 6px;font-size:18px;color:var(--vinho)}
-.card p{margin:0;font-size:16px;color:var(--suave)}
+.card h3{margin:0 0 6px;font-size:21px;color:var(--vinho)}
+.card p{margin:0;font-size:18px;color:var(--suave)}
 .num{display:inline-flex;width:34px;height:34px;border-radius:50%;background:var(--vinho);color:#fff;align-items:center;justify-content:center;font-family:"Segoe UI",sans-serif;font-weight:700;margin-bottom:10px}
 .faixa{background:var(--ouro-claro);border-top:1px solid var(--linha);border-bottom:1px solid var(--linha)}
 .preco{font-family:"Segoe UI",sans-serif;font-size:44px;font-weight:800;color:var(--vinho);margin:4px 0}
 .escada{display:grid;gap:10px;counter-reset:e}
 .degrau{background:#fff;border:1px solid var(--linha);border-left:6px solid var(--ouro);border-radius:10px;padding:14px 18px}
 .degrau b{font-family:"Segoe UI",sans-serif;color:var(--vinho)}
-footer{background:var(--vinho);color:#e9dde0;padding:34px 0;font-size:15px}
+footer{background:var(--vinho);color:#e9dde0;padding:34px 0;font-size:17px}
 footer a{color:var(--ouro-claro)}
-.copy{border-top:1px solid rgba(201,162,75,.4);margin:22px 0 0;padding-top:16px;font-size:13px;color:#d9c9ce;text-align:center}
-.aviso{font-size:14px;color:#cdbcc1;margin-top:14px}
-@media (max-width:520px){body{font-size:17px}.btn{width:100%;text-align:center}}
+.copy{border-top:1px solid rgba(201,162,75,.4);margin:22px 0 0;padding-top:16px;font-size:15px;color:#d9c9ce;text-align:center}
+.aviso{font-size:16px;color:#cdbcc1;margin-top:14px}
+@media (max-width:520px){body{font-size:19px}.btn{width:100%;text-align:center}}
 </style>
 </head>
 <body>
@@ -115,7 +115,7 @@ footer a{color:var(--ouro-claro)}
         </div>
         <p class="proximo">Próximo passo</p>
         <p class="preco">R$ 50 <span>no Pix</span></p>
-        <p class="nota">Você paga por Pix no próprio WhatsApp e envia o comprovante. Se precisar contratar um serviço da Percy, <strong>os R$ 50 valem como entrada e são abatidos do valor do serviço</strong>, como nos valores acima. O crédito vale por 10 dias, contados da entrega do relatório. Onde há faixa de valor, o preço final depende da complexidade e é confirmado por escrito antes da contratação.</p><p class="nota peq">O Raio-X é um serviço prestado e não tem devolução. Multas e juros cobrados pela Receita são pagos à Receita e não entram no valor do serviço.</p></div>
+        <p class="nota">Pague por Pix no próprio WhatsApp e envie o comprovante. <strong>Se contratar um serviço, os R$ 50 viram entrada e são abatidos do valor</strong>, como nos preços acima. O crédito vale por 10 dias após a entrega do relatório.</p><p class="nota peq">Onde há faixa de valor, o preço final é confirmado por escrito antes de você contratar. O Raio-X é um serviço prestado e não tem devolução.</p></div>
     </div>
     <p style="margin:26px 0 0"><a class="btn" href="https://wa.me/5521979667707?text=Ol%C3%A1!%20Quero%20o%20Raio-X%20MEI" target="_blank" rel="noopener">Pedir o Raio-X no WhatsApp</a></p>
   </div>
