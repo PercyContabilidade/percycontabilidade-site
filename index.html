@@ -46,6 +46,7 @@ h2{font-size:clamp(24px,4.5vw,32px);margin:0 0 8px;color:var(--vinho)}
 .degrau b{font-family:"Segoe UI",sans-serif;color:var(--vinho)}
 footer{background:var(--vinho);color:#e9dde0;padding:34px 0;font-size:15px}
 footer a{color:var(--ouro-claro)}
+.copy{border-top:1px solid rgba(201,162,75,.4);margin:22px 0 0;padding-top:16px;font-size:13px;color:#d9c9ce;text-align:center}
 .aviso{font-size:14px;color:#cdbcc1;margin-top:14px}
 @media (max-width:520px){body{font-size:17px}.btn{width:100%;text-align:center}}
 </style>
@@ -129,9 +130,10 @@ footer a{color:var(--ouro-claro)}
   <div class="wrap">
     <strong>PERCY CONTABILIDADE – Negócios Inteligentes</strong><br>
     WhatsApp: <a href="https://wa.me/5521979667707" target="_blank" rel="noopener">(21) 97966-7707</a><br>
-    <br>CNPJ 37.840.167/0001-70 · CRC 126339
     <p class="aviso">O Raio-X é um diagnóstico informativo, baseado em consultas a fontes oficiais, e não promete resultado. Valores e prazos fiscais seguem a legislação vigente. Os dados que você enviar são usados apenas para o atendimento.</p>
+    <p class="copy">© <span id="ano">2026</span> Percy Contabilidade – Negócios Inteligentes. Todos os direitos reservados.<br>CNPJ 37.840.167/0001-70 · CRC 126339</p>
   </div>
 </footer>
+<script>document.getElementById("ano").textContent=new Date().getFullYear();</script>
 </body>
 </html>
