@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="../favicon.png">
+<title>MEI perto do teto | Percy Contabilidade</title>
+<meta name="description" content="MEI: o limite de 2026 continua R$ 81 mil. Veja a regra dos 20%, calcule quanto ainda pode faturar e faça o Raio-X MEI da Percy.">
+<meta property="og:title" content="MEI: vai passar de R$ 81 mil este ano?">
+<meta property="og:description" content="A regra dos 20%, a calculadora do limite e o Raio-X MEI da Percy Contabilidade.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#5b1530">
+<style>
+:root{--vinho:#5b1530;--vinho2:#7a1d41;--ouro:#c9a24b;--ouro-claro:#f3e7c6;--papel:#fbf8f2;--texto:#2a1a20;--suave:#6b5a60;--linha:#e6dcc8}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Georgia,"Times New Roman",serif;color:var(--texto);background:var(--papel);line-height:1.65;font-size:20px}
+h1,h2,h3,.marca,.btn,.tag{font-family:"Segoe UI",system-ui,-apple-system,Arial,sans-serif}
+a{color:inherit}
+.wrap{max-width:980px;margin:0 auto;padding:0 20px}
+header{background:#3f0d0c;color:#fff}
+.logo{display:block;height:64px;width:auto}
+.topo{display:flex;align-items:center;justify-content:space-between;padding:14px 0;gap:12px;flex-wrap:wrap}
+.marca{font-weight:700;font-size:20px;letter-spacing:.3px}
+.marca span{display:block;font-weight:400;font-size:12px;color:var(--ouro-claro);letter-spacing:1.5px;text-transform:uppercase}
+.btn{display:inline-block;background:var(--ouro);color:#2a1a20;font-weight:700;text-decoration:none;padding:15px 26px;border-radius:10px;font-size:19px;border:0;cursor:pointer}
+.btn:hover{background:#d8b45c}
+.btn.sec{background:transparent;border:2px solid var(--ouro);color:#fff}
+.hero{padding:44px 0 56px;text-align:center}
+.hero p{margin-left:auto;margin-right:auto}
+.hero .acoes{justify-content:center}
+.passos{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.passos .largo{grid-column:1 / -1}
+@media (max-width:640px){.passos{grid-template-columns:1fr}}
+.tag{display:inline-block;background:rgba(201,162,75,.18);color:var(--ouro-claro);padding:6px 12px;border-radius:99px;font-size:13px;letter-spacing:.5px}
+h1{font-size:clamp(30px,6vw,46px);line-height:1.15;margin:16px 0 14px}
+.hero p{font-size:22px;max-width:640px;color:#f1e8ea;margin:0 auto 26px}
+.acoes{display:flex;gap:12px;flex-wrap:wrap}
+section{padding:54px 0}
+.centro{text-align:center}
+.centro .card{text-align:center}
+.centro .num{margin-left:auto;margin-right:auto}
+.centro .grade{text-align:center}
+.card.destaque{border:2px solid var(--ouro)}
+.card .preco{font-size:42px;margin:10px 0 0;color:var(--vinho)}
+.diag{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:14px 0 6px;text-align:left}.diag>div{background:var(--papel);border:1px solid var(--linha);border-radius:10px;padding:12px 14px}.diag h4{margin:0 0 4px;font-size:18px;color:var(--vinho)}.diag p{font-size:16px}@media (max-width:640px){.diag{grid-template-columns:1fr}}.card .proximo{margin-top:18px;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--ouro)}.card .preco span{font-size:18px}.serv{list-style:none;margin:10px 0 0;padding:0;text-align:left}.serv li{display:flex;flex-direction:column;gap:2px;font-size:16px;padding:6px 0;border-top:1px dashed var(--linha);color:var(--suave)}.serv b{color:var(--vinho);white-space:nowrap}.card .nota.peq{font-size:15px}.card .nota{font-size:17px;margin-top:6px}
+h2{font-size:clamp(24px,4.5vw,32px);margin:0 0 8px;color:var(--vinho)}
+.sub{color:var(--suave);margin:0 0 28px}
+.grade{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.card{background:#fff;border:1px solid var(--linha);border-radius:14px;padding:20px}
+.card h3{margin:0 0 6px;font-size:21px;color:var(--vinho)}
+.card p{margin:0;font-size:18px;color:var(--suave)}
+.num{display:inline-flex;width:34px;height:34px;border-radius:50%;background:var(--vinho);color:#fff;align-items:center;justify-content:center;font-family:"Segoe UI",sans-serif;font-weight:700;margin-bottom:10px}
+.faixa{background:var(--ouro-claro);border-top:1px solid var(--linha);border-bottom:1px solid var(--linha)}
+.preco{font-family:"Segoe UI",sans-serif;font-size:44px;font-weight:800;color:var(--vinho);margin:4px 0}
+.escada{display:grid;gap:10px;counter-reset:e}
+.degrau{background:#fff;border:1px solid var(--linha);border-left:6px solid var(--ouro);border-radius:10px;padding:14px 18px}
+.degrau b{font-family:"Segoe UI",sans-serif;color:var(--vinho)}
+footer{background:var(--vinho);color:#e9dde0;padding:34px 0;font-size:17px}
+footer a{color:var(--ouro-claro)}
+.copy{border-top:1px solid rgba(201,162,75,.4);margin:22px 0 0;padding-top:16px;font-size:15px;color:#d9c9ce;text-align:center}
+.aviso{font-size:16px;color:#cdbcc1;margin-top:14px}
+@media (max-width:520px){body{font-size:19px}.btn{width:100%;text-align:center}}
+.calc{background:#fff;border:2px solid var(--ouro);border-radius:14px;padding:22px;max-width:620px;margin:0 auto;text-align:left}
+.calc label{display:block;font-family:"Segoe UI",sans-serif;font-weight:700;color:var(--vinho);margin:12px 0 6px;font-size:18px}
+.calc input{width:100%;font-size:20px;padding:12px;border:1px solid var(--linha);border-radius:10px;background:var(--papel)}
+.res{margin-top:16px;padding:14px 16px;border-radius:10px;font-size:18px;background:var(--papel);border-left:6px solid var(--ouro)}
+.res.alerta{border-left-color:#b3261e}
+table.regra{width:100%;border-collapse:collapse;font-size:17px;background:#fff}
+table.regra td,table.regra th{border:1px solid var(--linha);padding:10px;text-align:left;vertical-align:top}
+table.regra th{background:var(--ouro-claro);font-family:"Segoe UI",sans-serif;color:var(--vinho)}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="topo">
+      <a href="../"><img class="logo" alt="Percy Contabilidade – Negócios Inteligentes" src="../logo.jpg"></a>
+      <a class="btn sec" href="https://wa.me/5521985518475?text=Ol%C3%A1!%20Quero%20o%20Raio-X%20do%20teto%20do%20MEI" target="_blank" rel="noopener">Falar no WhatsApp</a>
+    </div>
+    <div class="hero">
+      <span class="tag">MEI EM 2026</span>
+      <h1>Seja quem for o vencedor da eleição, o vencedor do seu negócio é você.</h1>
+      <p>Novembro e dezembro são os meses que mais vendem. <strong>Você já sabe quanto ainda pode faturar como MEI este ano?</strong></p>
+      <div class="acoes">
+        <a class="btn" href="#calculo">Fazer a conta agora</a>
+        <a class="btn sec" href="https://wa.me/5521985518475?text=Ol%C3%A1!%20Quero%20o%20Raio-X%20do%20teto%20do%20MEI" target="_blank" rel="noopener">Quero o Raio-X do teto</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="regra">
+  <div class="wrap">
+    <h2>A regra, em linguagem simples</h2>
+    <p class="sub">O limite do MEI em 2026 continua <strong>R$ 81 mil por ano</strong>. O projeto que aumenta o teto ainda não é lei.</p>
+    <table class="regra">
+      <tr><th>Situação</th><th>O que acontece</th></tr>
+      <tr><td>Faturou até R$ 81 mil no ano</td><td>Continua MEI.</td></tr>
+      <tr><td>Passou até 20% (até R$ 97.200)</td><td>Sai do MEI a partir de janeiro do ano seguinte e paga o imposto sobre o valor que passou.</td></tr>
+      <tr><td>Passou mais de 20% (acima de R$ 97.200)</td><td>O desenquadramento volta a 1º de janeiro do ano em que passou: os impostos do ano são recalculados como microempresa.</td></tr>
+      <tr><td>Abriu o MEI este ano</td><td>O limite é proporcional: R$ 6.750 por mês de atividade.</td></tr>
+    </table>
+    <p class="sub" style="margin-top:12px;font-size:16px">Fontes: gov.br (Teto do MEI) e Lei Complementar 123/2006, art. 18-A. O excesso deve ser comunicado até o último dia útil do mês seguinte ao mês em que aconteceu.</p>
+  </div>
+</section>
+
+<section id="calculo" class="faixa">
+  <div class="wrap centro">
+    <h2>Quanto você ainda pode faturar?</h2>
+    <p class="sub">Uma conta rápida. Os números ficam só no seu celular.</p>
+    <div class="calc">
+      <label for="fat">Quanto você faturou de janeiro até hoje? (R$)</label>
+      <input id="fat" inputmode="decimal" placeholder="Ex.: 62000">
+      <label for="meses">Em quantos meses de 2026 o seu MEI esteve aberto?</label>
+      <input id="meses" inputmode="numeric" value="12">
+      <label for="prev">Quanto espera vender de hoje até 31 de dezembro? (R$)</label>
+      <input id="prev" inputmode="decimal" placeholder="Ex.: 20000">
+      <div id="res" class="res">Preencha os campos para ver o resultado.</div>
+    </div>
+    <p style="margin:26px 0 0"><a class="btn" href="https://wa.me/5521985518475?text=Ol%C3%A1!%20Quero%20o%20Raio-X%20do%20teto%20do%20MEI" target="_blank" rel="noopener">Quero o Raio-X do teto no WhatsApp</a></p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap centro">
+    <h2>Crescer sem plano vira susto. Crescer com estratégia vira empresa.</h2>
+    <p class="sub" style="max-width:680px;margin:0 auto 22px">O <strong>Raio-X MEI</strong> confere em fonte oficial o seu DAS, a declaração anual, a dívida ativa e o seu limite de faturamento. Você recebe um relatório simples: quanto ainda pode faturar, o que está pendente e qual o próximo passo. <strong>R$ 50</strong>, que viram crédito se você contratar um serviço. Se a hora for de virar ME, fazemos a sua transição com o <strong>Avancei, Sou ME</strong>.</p>
+    <div class="grade">
+      <div class="card"><div class="num">1</div><h3>Você chama</h3><p>O WhatsApp abre com a mensagem pronta.</p></div>
+      <div class="card"><div class="num">2</div><h3>Nós analisamos</h3><p>Conferimos o seu CNPJ em fonte oficial.</p></div>
+      <div class="card"><div class="num">3</div><h3>Você decide</h3><p>Com o relatório na mão, sem pressa e sem susto.</p></div>
+    </div>
+    <p style="margin:26px 0 0"><a class="btn" href="https://wa.me/5521985518475?text=Ol%C3%A1!%20Quero%20o%20Raio-X%20do%20teto%20do%20MEI" target="_blank" rel="noopener">Começar o meu Raio-X</a></p>
+    <p class="sub" style="margin-top:14px;font-size:16px"><a href="../#como">Ver o que o Raio-X confere e os preços dos serviços</a></p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <strong>PERCY CONTABILIDADE – Negócios Inteligentes</strong><br>
+    WhatsApp: <a href="https://wa.me/5521985518475" target="_blank" rel="noopener">(21) 98551-8475</a><br>
+    E-mail: <a href="mailto:gestao@percycontabilidade.com.br">gestao@percycontabilidade.com.br</a><br>
+    <a href="https://www.instagram.com/percycontabilidade/" target="_blank" rel="noopener">Instagram</a> · <a href="https://www.youtube.com/@percycontabilidade" target="_blank" rel="noopener">YouTube</a><br>
+    <p class="aviso">Conteúdo informativo, sem relação com candidato ou partido. A calculadora é uma estimativa e não substitui a análise do seu caso. O Raio-X é um diagnóstico baseado em consultas a fontes oficiais.</p>
+    <p class="copy">© <span id="ano">2026</span> Percy Contabilidade – Negócios Inteligentes. Todos os direitos reservados.<br>CNPJ 37.840.167/0001-70 · CRC 126339</p>
+  </div>
+</footer>
+<script>
+document.getElementById("ano").textContent=new Date().getFullYear();
+function n(id){var v=(document.getElementById(id).value||"").replace(/\./g,"").replace(",",".");return parseFloat(v)||0}
+function brl(x){return x.toLocaleString("pt-BR",{style:"currency",currency:"BRL"})}
+function calc(){
+  var f=n("fat"),m=Math.min(12,Math.max(1,Math.round(n("meses")||12))),p=n("prev"),r=document.getElementById("res");
+  if(!f&&!p){r.className="res";r.textContent="Preencha os campos para ver o resultado.";return}
+  var lim=6750*m,t=f+p,teto20=lim*1.2,folga=lim-f;
+  var txt="Seu limite em 2026: <b>"+brl(lim)+"</b>. Com a previsão, o ano fecha em <b>"+brl(t)+"</b>. ";
+  if(t<=lim){r.className="res";txt+="Dentro do limite. Ainda cabem cerca de <b>"+brl(lim-t)+"</b> até dezembro."}
+  else if(t<=teto20){r.className="res alerta";txt+="Passa do limite em até 20%: você sairia do MEI em janeiro e pagaria imposto sobre o excesso. Vale planejar agora."}
+  else{r.className="res alerta";txt+="Passa do limite em mais de 20%: o desenquadramento voltaria a janeiro deste ano. Fale com a gente antes de dezembro."}
+  if(folga<0&&t>lim){txt+=" (Você já passou do limite com o que faturou até hoje.)"}
+  r.innerHTML=txt;
+}
+["fat","meses","prev"].forEach(function(id){document.getElementById(id).addEventListener("input",calc)});
+</script>
+</body>
+</html>
